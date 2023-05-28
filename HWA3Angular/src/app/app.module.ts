@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { SidebarComponent } from './common/sidebar/sidebar.component';
 //import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
