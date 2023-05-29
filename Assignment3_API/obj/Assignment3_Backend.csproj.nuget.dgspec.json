@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\INF354\\Assignment\\Assignment 3\\Assignment3_API\\Assignment3_Backend.csproj": {}
+    "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj": {}
   },
   "projects": {
-    "C:\\INF354\\Assignment\\Assignment 3\\Assignment3_API\\Assignment3_Backend.csproj": {
+    "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\INF354\\Assignment\\Assignment 3\\Assignment3_API\\Assignment3_Backend.csproj",
+        "projectUniqueName": "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj",
         "projectName": "Assignment3_Backend",
-        "projectPath": "C:\\INF354\\Assignment\\Assignment 3\\Assignment3_API\\Assignment3_Backend.csproj",
+        "projectPath": "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj",
         "packagesPath": "C:\\Users\\nkate\\.nuget\\packages\\",
-        "outputPath": "C:\\INF354\\Assignment\\Assignment 3\\Assignment3_API\\obj\\",
+        "outputPath": "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ehl65fB69rxZnV898LxLagmJLt2ISwZaRw7xWgduf2Yi9eBr5RQabY44lbrV9y7c/74RlrtShpOor+P8/2sYLw==",
+  "dgSpecHash": "dArfOOiLx6kc8DoNLfnUaLviBDHFnrLfKhs1ue3HRUaDYKlXD451o1ahUrepK9j6+NhNL37QYu7KUS+Lb5HE/Q==",
   "success": true,
-  "projectFilePath": "C:\\INF354\\Assignment\\Assignment 3\\Assignment3_API\\Assignment3_Backend.csproj",
+  "projectFilePath": "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nkate\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nkate\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.16\\microsoft.aspnetcore.authentication.jwtbearer.6.0.16.nupkg.sha512",

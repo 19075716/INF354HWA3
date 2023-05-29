@@ -19,5 +19,10 @@ namespace Assignment3_Backend.Models
         {
             return await _appDbContext.SaveChangesAsync() > 0;
         }
+
+        public async Task<T[]> GetAllAsync<T>() where T : class
+        {
+            return await _appDbContext.Set<T>().ToArrayAsync();
+        }
     }
 }
