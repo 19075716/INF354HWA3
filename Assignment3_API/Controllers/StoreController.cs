@@ -28,6 +28,52 @@ namespace Assignment3_Backend.Controllers
                     return StatusCode(500, "Internal Server Error. Please contact support.");
                 }
             }
-        
+
+        [HttpGet]
+        [Route("GetBrands")]
+        public async Task<IActionResult> GetBrands()
+        {
+            try
+            {
+                var results = await _repository.GetAllAsync<Brand>();
+                return Ok(results);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal Server Error. Please contact support.");
+            }
+        }
+
+        [HttpGet]
+        [Route("GetProductTypes")]
+        public async Task<IActionResult> GetProductTypes()
+        {
+            try
+            {
+                var results = await _repository.GetAllAsync<ProductType>();
+                return Ok(results);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal Server Error. Please contact support.");
+            }
+        }
+
+        [HttpPost]
+        [Route("AddProduct")]
+        public async Task<IActionResult> AddProduct(Product product)
+        {
+            try
+            {
+                _repository.Add(product);
+                await _repository.SaveChangesAsync();
+
+                return Ok(product);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal Server Error. Please contact support.");
+            }
+        }
     }
 }
