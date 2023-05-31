@@ -75,5 +75,22 @@ namespace Assignment3_Backend.Controllers
                 return StatusCode(500, "Internal Server Error. Please contact support.");
             }
         }
+
+        [HttpPost]
+        [Route("RegisterUser")]
+        public async Task<IActionResult> RegisterUser(Product product)
+        {
+            try
+            {
+                _repository.Add(product);
+                await _repository.SaveChangesAsync();
+
+                return Ok(product);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal Server Error. Please contact support.");
+            }
+        }
     }
 }
