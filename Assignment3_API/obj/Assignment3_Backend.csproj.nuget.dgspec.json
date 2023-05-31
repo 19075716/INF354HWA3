@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj": {}
+    "C:\\INF354\\Assignments\\HWA3_3\\API\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj": {}
   },
   "projects": {
-    "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj": {
+    "C:\\INF354\\Assignments\\HWA3_3\\API\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj",
+        "projectUniqueName": "C:\\INF354\\Assignments\\HWA3_3\\API\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj",
         "projectName": "Assignment3_Backend",
-        "projectPath": "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj",
-        "packagesPath": "C:\\Users\\nkate\\.nuget\\packages\\",
-        "outputPath": "C:\\INF354\\Assignment\\Assignment 3\\INF354HWA3\\Assignment3_API\\obj\\",
+        "projectPath": "C:\\INF354\\Assignments\\HWA3_3\\API\\INF354HWA3\\Assignment3_API\\Assignment3_Backend.csproj",
+        "packagesPath": "C:\\Users\\Nkateko\\.nuget\\packages\\",
+        "outputPath": "C:\\INF354\\Assignments\\HWA3_3\\API\\INF354HWA3\\Assignment3_API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nkate\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Nkateko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

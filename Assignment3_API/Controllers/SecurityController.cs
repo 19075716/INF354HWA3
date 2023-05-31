@@ -32,27 +32,35 @@ namespace Assignment3_Backend.Controllers
         [Route("Register")]
         public async Task<IActionResult> Register(UserViewModel uvm)
         {
-            var user = await _userManager.FindByIdAsync(uvm.emailaddress);
-            if (user == null)
+            if (!ModelState.IsValid)
             {
-                user = new AppUser
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    UserName = uvm.emailaddress,
-                    Email = uvm.emailaddress
-                };
-
-                var result = await _userManager.CreateAsync(user, uvm.password);
-
-                if (result.Errors.Count() > 0) return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error. Please contact support.");
+                return BadRequest(ModelState);
             }
-            else
+
+            var user = await _userManager.FindByEmailAsync(uvm.emailaddress);
+            if (user != null)
             {
-                return Forbid("Account already exists.");
+                return Conflict("Account already exists.");
+            }
+
+            var newUser = new AppUser
+            {
+                Id = Guid.NewGuid().ToString(),
+                UserName = uvm.emailaddress,
+                Email = uvm.emailaddress
+            };
+
+            var result = await _userManager.CreateAsync(newUser, uvm.password);
+            if (!result.Succeeded)
+            {
+                // Log the specific error details or return a more meaningful error message
+                // You can access the errors via result.Errors property
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while creating the user.");
             }
 
             return Ok();
         }
+
 
         //Ai Generated
         [HttpPost]
@@ -68,16 +76,16 @@ namespace Assignment3_Backend.Controllers
                     var token = GenerateJWTToken(user);
                     return Created("", new { token, user = user.UserName });
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error. Please contact support.");
+                    // Log the specific exception details for troubleshooting
+                    return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while generating the JWT token.");
                 }
             }
-            else
-            {
-                return NotFound("Does not exist");
-            }
+
+            return Unauthorized("Invalid credentials");
         }
+
 
         //Ai Generated
         [HttpGet]
